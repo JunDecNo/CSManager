@@ -1,0 +1,39 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/forum/forum",
+    "pages/gallery/gallery",
+    "pages/user/user"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "计科班级管理",
+    "navigationBarTextStyle":"black"
+  },
+  "tabBar": {
+    "list": [{
+      "pagePath": "pages/index/index",
+      "text": "主页",
+      "iconPath": "images/index_s.png",
+      "selectedIconPath": "images/index.png"
+    },{
+      "pagePath": "pages/forum/forum",
+      "text": "论坛",
+      "iconPath": "images/forum_s.png",
+      "selectedIconPath": "images/forum.png"
+    },{
+      "pagePath": "pages/gallery/gallery",
+      "text": "相册",
+      "iconPath": "images/gallery_s.png",
+      "selectedIconPath": "images/gallery.png"
+    },{
+      "pagePath": "pages/user/user",
+      "text": "用户",
+      "iconPath": "images/user_s.png",
+      "selectedIconPath": "images/user.png"
+    }]
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+}
