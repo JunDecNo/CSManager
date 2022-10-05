@@ -1,0 +1,64 @@
+<!-- 大学生体测计算器 -->
+<view class="base">
+    <view class="item">
+        <text class="item-title">性别</text>
+        <radio-group class="item-input" bindchange="changeSex">
+            <label>
+                <radio value="male" checked="{{sex}}"/>
+                男
+            </label>
+            <label>
+                <radio value="female"  checked="{{!sex}}"/>
+                女
+            </label>
+        </radio-group>
+    </view>
+    <view class="item">
+        <text class="item-title">年级</text>
+        <picker class="item-input" mode="selector" bindchange="bindPickerChange" value="{{index}}" range="{{pickerList}}">
+            <view class="picker">{{pickerList[index]}}</view>
+        </picker>
+    </view>
+    <view class="item">
+        <text class="item-title">身高</text>
+        <input class="item-input" type="number" placeholder="{{height}}" bindinput="inputHeight" />
+    </view>
+    <view class="item">
+        <text class="item-title">体重</text>
+        <input class="item-input" type="number" placeholder="{{weight}}" bindinput="inputWeight" />
+        </view>
+    <view class="item">
+        <text class="item-title">肺活量</text>
+        <input class="item-input" type="number" placeholder="{{lung}}" bindinput="inputLung" />
+        </view>
+    <view class="item">
+        <text class="item-title">50米跑</text>
+        <input class="item-input" type="number" placeholder="{{five}}" bindinput="inputFive" />
+        </view>
+    <view class="item">
+        <text class="item-title">立定跳远</text>
+        <input class="item-input" type="number" placeholder="{{jump}}" bindinput="inputJump" />
+        </view>
+    <view class="item">
+        <text class="item-title">坐位体前屈</text>
+        <input class="item-input" type="number" placeholder="{{sit}}" bindinput="inputSit" />
+        </view>
+    <view class="item" wx:if="{{sex}}">
+        <text class="item-title">引体向上</text>
+        <input class="item-input" type="number" placeholder="{{push}}" bindinput="inputPush" />
+        </view>
+    <view class="item" wx:if="{{!sex}}">
+        <text class="item-title">仰卧起坐</text>
+        <input class="item-input" type="number" placeholder="{{push}}" bindinput="inputPush" />
+        </view>                
+    <view class="item" wx:if="{{!sex}}">
+        <text class="item-title">800米跑</text>
+        <input class="item-input" type="number" placeholder="{{run}}" bindinput="inputRun" />
+        </view>
+    <view class="item" wx:if="{{sex}}">
+        <text class="item-title">1000米跑</text>
+        <input class="item-input" type="number" placeholder="{{run}}" bindinput="inputRun" />
+        </view>
+    <button class="btn" bind:tap="calGrade">计算分数</button>
+    <button class="btn" bind:tap="save">存档</button>
+</view>

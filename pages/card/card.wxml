@@ -1,0 +1,21 @@
+<!--pages/sign/sign.wxml-->
+<scroll-view class="timelist" scroll-y>
+  <view class="top" bindtap="addResult" style="background-color: {{viewBg}};">
+    <view>{{notice}}</view>
+  </view>
+  <view wx:for="{{signList}}" wx:key="time" class="card">
+      <view class="result">
+        <text class="resulttext">采样结果：</text>
+        <image class="image" src="/images/feminine.png" mode="aspectFit"></image>
+      </view>
+      <view class="line"></view>
+      <view class="time">
+        <text>时间：</text>
+        <text style="color: rgb(156, 156, 156);">{{item.time}}</text>
+      </view>
+      <view class="time">
+        <text>地点：</text>
+        <text style="color: rgb(156, 156, 156);">{{item.address}}</text>
+      </view>
+  </view>
+</scroll-view>

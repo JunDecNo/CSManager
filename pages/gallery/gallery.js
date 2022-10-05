@@ -1,11 +1,46 @@
-// pages/gallery/gallery.js
+// pages/forum/forum.js
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-
+    bannerList: [
+      {
+        id: 0,
+        imgUrl: '../../images/source/index/img_0.jpg'
+      },{
+        id: 1,
+        imgUrl: '../../images/source/index/img_1.jpg'
+      },{
+        id: 2,
+        imgUrl: '../../images/source/index/img_2.jpg'
+      } 
+    ],
+    navList_1:[
+      {
+        id: 0,
+        url: '/pages/wenti/wenti',
+        imgUrl: '../../images/source/gallery/wenti.png',
+        name: '文体活动',
+      },{
+        id: 1,
+        url: '/pages/zhiyuan/zhiyuan',
+        imgUrl: '../../images/source/gallery/zhiyuan.png',
+        name: '志愿服务',
+      },{
+        id: 2,
+        url: '/pages/tansuo/tansuo',
+        imgUrl: '../../images/source/gallery/tansuo.png',
+        name: '探索创新',
+      }
+    ],
+    indicatorDots: true, // 是否显示面板指示点
+    autoplay: true, //是否自动切换
+    circular: true, //是否采用衔接滑动
+    vertical: false, //滑动方向是否为纵向
+    interval: 3000, //自动切换时间间隔
+    duration: 100, //滑动动画时长
   },
 
   /**

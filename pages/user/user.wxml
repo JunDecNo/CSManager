@@ -1,2 +1,19 @@
-<!--pages/user/user.wxml-->
-<text>pages/user/user.wxml</text>
+<Tabs tabs="{{tabs}}" bindtabsItemChange="handleItemChange">
+    <block wx:if="{{tabs[0].isActive}}">
+        <!-- 个人照片 -->
+        <image class="avatar" src="../../images/source/index/img_0.jpg" />
+        <!-- 所获荣誉描述 -->
+        <text class="honor">urehwioguhreiugvhasdfkjnvjkhngbuirehgiewrdlkjfvhasduighaerigggggggggggggggggggggufmv,nvjkfdnviuerhbkjdfnvbiuaerhgaklghaluier</text>
+        <!-- 照片轮播图 -->
+        <swiper class="swiper_box" autoplay="{{autoplay}}" indicator-dots="{{indicatorDots}}" circular="{{circular}}">
+            <swiper-item wx:for="{{bannerList_0}}" wx:key="id">
+                <navigator url="{{item.target}}" open-type="navigate" hover-class="none">
+                    <image class="swiper_img" src="{{item.imgUrl}}" mode="widthFix" alt=""></image>
+                </navigator>
+            </swiper-item>
+        </swiper>
+    </block>
+    <block wx:if="{{tabs[1].isActive}}">222</block>
+    <block wx:if="{{tabs[2].isActive}}">333</block>
+    <block wx:if="{{tabs[3].isActive}}">444</block>
+</Tabs>

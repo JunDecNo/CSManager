@@ -1,0 +1,58 @@
+/* pages/sign/sign.wxss */
+
+.top {
+  height: 200px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 200%;
+  font-weight: bold;
+  color: white;
+  text-align: center;
+  line-height: 200px;
+  justify-content: center;
+  margin: 16px;
+  margin-top: 20px;
+  border-radius: 20px;
+}
+
+.result {
+  display: flex;
+  justify-content: space-between;
+  height: 50px;
+  width: 90%;
+  text-align: center;
+}
+
+.image {
+  width: 40px;
+  height: 40px;
+}
+
+.card {
+  margin-left: 32px;
+  margin-right: 32px;
+  margin-top: 16px;
+  margin-bottom: 16px;
+  padding: 15px;
+  background-color: rgb(207, 224, 196);
+  border-radius: 10px;
+  box-shadow: -1px 3px 6px 2px rgb(192, 192, 192);
+}
+
+.line {
+  background-color: rgb(163, 162, 162);
+  height: 1px;
+  margin-bottom: 20px;
+}
+
+.resulttext {
+  text-align: center;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.time {
+  display: flex;
+  justify-content: space-between;
+}

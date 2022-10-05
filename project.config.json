@@ -5,6 +5,8 @@
     "include": []
   },
   "setting": {
+    "ignoreDevUnusedFiles": false,
+    "ignoreUploadUnusedFiles": false,
     "bundle": false,
     "userConfirmedBundleSwitch": false,
     "urlCheck": true,
@@ -41,11 +43,16 @@
   },
   "compileType": "miniprogram",
   "libVersion": "2.19.4",
-  "appid": "wxf258a1dba309c2e5",
+  "appid": "wx2557ba9c8ba31fb8",
   "projectname": "miniprogram-92",
   "condition": {},
   "editorSetting": {
     "tabIndent": "insertSpaces",
     "tabSize": 2
+  },
+  "permission": {
+    "scope.userLocation": {
+      "desc": "你的位置信息将用于小程序定位"
+    }
   }
 }

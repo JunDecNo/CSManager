@@ -1,0 +1,20 @@
+
+.item{
+    margin: 30rpx 0;
+    padding-left: 50rpx;
+    display: flex;
+    flex-direction: row;
+}
+.item-title{
+    flex: 2;
+    flex-direction:row;
+    color: #000;
+    margin-right: 100rpx;
+}
+.item-input{
+    flex: 3;
+}
+.btn{
+    background-color: var(--themeColor);
+    margin: 20rpx 0;
+}

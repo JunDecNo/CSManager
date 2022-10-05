@@ -3,7 +3,26 @@
     "pages/index/index",
     "pages/forum/forum",
     "pages/gallery/gallery",
-    "pages/user/user"
+    "pages/user/user",
+    "pages/grade/grade",
+    "pages/sport/sport",
+    "pages/heart/heart",
+    "pages/credit/credit",
+    "pages/douc/douc",
+    "pages/card/card",
+    "pages/back/back",
+    "pages/kyan/kyan",
+    "pages/collection/collection",
+    "pages/dang/dang",
+    "pages/class/class",
+    "pages/dorm/dorm",
+    "pages/analyze/analyze",
+    "pages/game/game",
+    "pages/rank/rank",
+    "pages/book/book",
+    "pages/wenti/wenti",
+    "pages/zhiyuan/zhiyuan",
+    "pages/tansuo/tansuo"
   ],
   "window":{
     "backgroundTextStyle":"light",
@@ -14,26 +33,31 @@
   "tabBar": {
     "list": [{
       "pagePath": "pages/index/index",
-      "text": "主页",
+      "text": "规矩方圆",
       "iconPath": "images/index_s.png",
       "selectedIconPath": "images/index.png"
     },{
       "pagePath": "pages/forum/forum",
-      "text": "论坛",
+      "text": "勤勉致知",
       "iconPath": "images/forum_s.png",
       "selectedIconPath": "images/forum.png"
     },{
       "pagePath": "pages/gallery/gallery",
-      "text": "相册",
+      "text": "明辨笃行",
       "iconPath": "images/gallery_s.png",
       "selectedIconPath": "images/gallery.png"
     },{
       "pagePath": "pages/user/user",
-      "text": "用户",
+      "text": "厚积薄发",
       "iconPath": "images/user_s.png",
       "selectedIconPath": "images/user.png"
     }]
   },
   "style": "v2",
-  "sitemapLocation": "sitemap.json"
+  "sitemapLocation": "sitemap.json",
+  "permission": {
+    "scope.userLocation": {
+    "desc": "你的位置信息将用于小程序定位"
+    }
+}
 }

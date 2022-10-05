@@ -1,2 +1,17 @@
-<!--pages/gallery/gallery.wxml-->
-<text>pages/gallery/gallery.wxml</text>
+<view class="container">
+    <view class="nav">
+        <block wx:for="{{navList_1}}" wx:key="id">
+            <navigator url="{{item.url}}" class="nav-item">
+                <image class="nav-img" src="{{item.imgUrl}}" mode="aspectFill" />
+                <text class="nav-text">{{item.name}}</text>
+            </navigator>
+        </block>
+    </view>
+    <swiper class="swiper_box" autoplay="{{autoplay}}" indicator-dots="{{indicatorDots}}" circular="{{circular}}">
+        <swiper-item wx:for="{{bannerList}}" wx:key="id">
+            <navigator url="{{item.target}}" open-type="navigate" hover-class="none">
+                <image class="swiper_img" src="{{item.imgUrl}}" mode="widthFix" alt=""></image>
+            </navigator>
+        </swiper-item>
+    </swiper>
+</view>
