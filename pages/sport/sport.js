@@ -94,7 +94,6 @@ Page({
   },
   save:function(){
     // 保存成绩
-    wx.setStorageSync('sport', this.data);
     wx.setStorage({
       key: 'sport',
       data: this.data,

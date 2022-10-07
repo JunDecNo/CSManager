@@ -1,2 +1,38 @@
-<!--pages/grade/grade.wxml-->
-<text>pages/grade/grade.wxml</text>
+<!-- 大学生体测计算器 -->
+<view class="base">
+    <view class="item">
+        <text class="item-title">姓名</text>
+        <input class="item-input" type="text" placeholder="{{userName}}" bindinput="inputUserName" />
+    </view>
+    <view class="item">
+        <text class="item-title">学号</text>
+        <input class="item-input" type="number" placeholder="{{userID}}" bindinput="inputUserID" />
+    </view>
+    <view class="item">
+        <text class="item-title">科目范围</text>
+        <radio-group class="item-input" bindchange="changeRange">
+            <label>
+                <radio value="alone" checked="{{Salone}}" />
+                单一
+            </label>
+            <label>
+                <radio value="year" checked="{{Syear}}" />
+                学年
+            </label>
+        </radio-group>
+    </view>
+    <view wx:if="{{Syear}}" class="item">
+        <text class="item-title">年级</text>
+        <picker class="item-input" mode="selector" bindchange="bindPickerChange" value="{{index}}" range="{{pickerList}}">
+            <view class="picker">{{pickerList[index]}}</view>
+        </picker>
+    </view>
+    <view wx:if="{{Salone}}" class="item">
+        <text class="item-title">科目</text>
+        <picker class="item-input" mode="multiSelector" bindcolumnchange="bindMultiPickerColumnChange" bindchange="bindMultiChange" value="{{multiIndex}}" range="{{multiArray}}">
+            <view class="picker">{{multiArray[2][multiIndex[2]]}}</view>
+        </picker>
+    </view>
+    <button class="btn" bind:tap="calGrade">计算分数</button>
+    <button class="btn" bind:tap="save">存档</button>
+</view>

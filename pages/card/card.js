@@ -44,7 +44,7 @@ Page({
           }else{
             that.setData({
               signList: res.data,
-              notice: '核酸采样' + days + '天'
+              notice: '核酸采样' + days.toFixed(0) + '天'
             })
           }
         }

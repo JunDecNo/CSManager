@@ -21,11 +21,11 @@
     </view>
     <view class="item">
         <text class="item-title">身高</text>
-        <input class="item-input" type="number" placeholder="{{height}}" bindinput="inputHeight" />
+        <input class="item-input" type="digit" placeholder="{{height}}" bindinput="inputHeight" />
     </view>
     <view class="item">
         <text class="item-title">体重</text>
-        <input class="item-input" type="number" placeholder="{{weight}}" bindinput="inputWeight" />
+        <input class="item-input" type="digit" placeholder="{{weight}}" bindinput="inputWeight" />
         </view>
     <view class="item">
         <text class="item-title">肺活量</text>
@@ -33,15 +33,15 @@
         </view>
     <view class="item">
         <text class="item-title">50米跑</text>
-        <input class="item-input" type="number" placeholder="{{five}}" bindinput="inputFive" />
+        <input class="item-input" type="digit" placeholder="{{five}}" bindinput="inputFive" />
         </view>
     <view class="item">
         <text class="item-title">立定跳远</text>
-        <input class="item-input" type="number" placeholder="{{jump}}" bindinput="inputJump" />
+        <input class="item-input" type="digit" placeholder="{{jump}}" bindinput="inputJump" />
         </view>
     <view class="item">
         <text class="item-title">坐位体前屈</text>
-        <input class="item-input" type="number" placeholder="{{sit}}" bindinput="inputSit" />
+        <input class="item-input" type="digit" placeholder="{{sit}}" bindinput="inputSit" />
         </view>
     <view class="item" wx:if="{{sex}}">
         <text class="item-title">引体向上</text>
@@ -53,11 +53,11 @@
         </view>                
     <view class="item" wx:if="{{!sex}}">
         <text class="item-title">800米跑</text>
-        <input class="item-input" type="number" placeholder="{{run}}" bindinput="inputRun" />
+        <input class="item-input" type="digit" placeholder="{{run}}" bindinput="inputRun" />
         </view>
     <view class="item" wx:if="{{sex}}">
         <text class="item-title">1000米跑</text>
-        <input class="item-input" type="number" placeholder="{{run}}" bindinput="inputRun" />
+        <input class="item-input" type="digit" placeholder="{{run}}" bindinput="inputRun" />
         </view>
     <button class="btn" bind:tap="calGrade">计算分数</button>
     <button class="btn" bind:tap="save">存档</button>
